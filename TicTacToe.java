@@ -40,6 +40,14 @@ public class TicTacToe {
 		}
 		currentState = PLAYING;
 		currentPlayer = Toss();
+      if(currentPlayer == 1)
+      {
+         currentPlayer = CROSS;
+      }
+      else
+      {
+         currentPlayer = NOUGHT;
+      }
 	}
 
 	//Function to generate random player
