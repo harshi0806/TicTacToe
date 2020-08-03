@@ -38,6 +38,14 @@ public class TicTacToe {
 				board[row][col] = EMPTY; //all cells empty
 			}
 		}
+		currentState = PLAYING;
+		currentPlayer = Toss();
+	}
+
+	//Function to generate random player
+	public static int Toss() {
+		final Random r = new Random();
+		return r.nextInt(2) + 1;
 	}
 }
 
