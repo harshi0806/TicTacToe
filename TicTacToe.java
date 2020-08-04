@@ -7,6 +7,7 @@ import java.util.Random;
 
 public class TicTacToe {
 	static String[] board;
+	static String turn;
 
 	public static void main(String[] args) {
 		board = new String[9];
@@ -18,10 +19,12 @@ public class TicTacToe {
 		if(player == 1)
 		{
 			System.out.println("User plays first.");
+			chooseLetter();
 		}
-		if(player == 0)
+		else
 		{
 			System.out.println("Computer plays first.");
+			chooseLetter();
 		}
 	}
 
@@ -40,5 +43,24 @@ public class TicTacToe {
 		System.out.println("Toss to see who plays first!");
 		Random random = new Random();
 		return random.nextInt(2);
+	}
+
+	/**
+	  *Function to choose letter X or O
+	  *@return inputLetter in variable turn
+	  */
+	public static String chooseLetter() {
+		System.out.println("Choose either X or O: ");
+		Scanner letter = new Scanner(System.in);
+		String inputLetter = letter.next();
+		if(inputLetter.equals("X"))
+		{
+			turn = "X";
+		}
+		else
+		{
+			turn = "O";
+		}
+		return turn;
 	}
 }
