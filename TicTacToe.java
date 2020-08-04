@@ -27,6 +27,7 @@ public class TicTacToe {
 	public static void main(String args[]) {
 		//Initialize the game board and current status
 		initGame();
+		printBoard();
 	}
 
 	//Initialize the game board contents and current states
