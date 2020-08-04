@@ -14,6 +14,7 @@ public class TicTacToe {
 		System.out.println("Welcome to 2 Player Tic Tac Toe.");
 		System.out.println("--------------------------------");
 		int player = Toss();
+		//player checked 1-user, 0-computer
 		if(player == 1)
 		{
 			System.out.println("User plays first.");
@@ -31,7 +32,9 @@ public class TicTacToe {
 		}
 	}
 
-	//Function to generate random player
+	/**Function to generate random player
+	  *@return random output to check which player plays first
+	  */
 	public static int Toss() {
 		System.out.println("Toss to see who plays first!");
 		Random random = new Random();
