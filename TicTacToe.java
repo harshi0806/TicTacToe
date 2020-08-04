@@ -3,6 +3,7 @@ package TicTacToe;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.Random;
 
 public class TicTacToe {
 	static String[] board;
@@ -12,6 +13,15 @@ public class TicTacToe {
 		populateEmptyBoard();
 		System.out.println("Welcome to 2 Player Tic Tac Toe.");
 		System.out.println("--------------------------------");
+		int player = Toss();
+		if(player == 1)
+		{
+			System.out.println("User plays first.");
+		}
+		if(player == 0)
+		{
+			System.out.println("Computer plays first.");
+		}
 	}
 
 	//This function is used to reset the board
@@ -19,13 +29,12 @@ public class TicTacToe {
 		for (int a = 0; a < 9; a++) {
 			board[a] = String.valueOf(a+1);
 		}
-		currentState = PLAYING;
-		currentPlayer = Toss();
 	}
 
 	//Function to generate random player
 	public static int Toss() {
-		final Random r = new Random();
-		return r.nextInt(2) + 1;
+		System.out.println("Toss to see who plays first!");
+		Random random = new Random();
+		return random.nextInt(2);
 	}
 }
