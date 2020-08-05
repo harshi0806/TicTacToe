@@ -192,7 +192,7 @@ public class TicTacToe {
 	  *This checks for every seeds which include all rows
 	  */
 	public static void nextMove() {
-		for(int a = 0; a < 6; a++)
+		for(int a = 0; a < 8; a++)
 		{
 			//Checks for all seeds in row
 			String line1 = board[0] + board[1] + board[2];
