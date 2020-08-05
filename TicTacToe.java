@@ -234,36 +234,36 @@ public class TicTacToe {
 							System.out.println("Enter value: 9");
 						break;
 					}
-            case 3 :
-               {
-                  if(line4.equals("1XX"))
-                     System.out.println("Enter value: 1");
-                  else if(line5.equals("2XX"))
-                     System.out.println("Enter value: 2");
-                  else if(line6.equals("3XX"))
-                     System.out.println("Enter value: 3");
-                  break;
-               }
-            case 4 :
-               {
-                  if(line4.equals("X4X"))
-                     System.out.println("Enter value: 4");
-                  else if(line5.equals("X5X"))
-                     System.out.println("Enter value: 5");
-                  else if(line6.equals("X6X"))
-                     System.out.println("Enter value: 6");
-                  break;
-               }
-            case 5 :
-               {
-                  if(line4.equals("XX7"))
-                     System.out.println("Enter value: 7");
-                  else if(line5.equals("XX8"))
-                     System.out.println("Enter value: 8");
-                  else if(line6.equals("XX9"))
-                     System.out.println("Enter value: 9");
-                  break;
-               }
+				case 3 :
+					{
+						if(line4.equals("1XX"))
+							System.out.println("Enter value: 1");
+						else if(line5.equals("2XX"))
+							System.out.println("Enter value: 2");
+						else if(line6.equals("3XX"))
+							System.out.println("Enter value: 3");
+						break;
+					}
+				case 4 :
+					{
+						if(line4.equals("X4X"))
+							System.out.println("Enter value: 4");
+						else if(line5.equals("X5X"))
+							System.out.println("Enter value: 5");
+						else if(line6.equals("X6X"))
+							System.out.println("Enter value: 6");
+						break;
+					}
+				case 5 :
+					{
+						if(line4.equals("XX7"))
+							System.out.println("Enter value: 7");
+						else if(line5.equals("XX8"))
+							System.out.println("Enter value: 8");
+						else if(line6.equals("XX9"))
+							System.out.println("Enter value: 9");
+						break;
+					}
 			}
 		}
 	}
