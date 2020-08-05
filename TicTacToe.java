@@ -189,7 +189,7 @@ public class TicTacToe {
 
 	/**
 	  *Function decides next move chose by the computer
-	  *This checks for every seeds which include all rows,columns,corners,centre
+	  *This checks for every seeds which include all rows,columns and diagonals which includes all sides
 	  */
 	public static void nextMove() {
 		for(int a = 0; a < 9; a++)
