@@ -202,6 +202,10 @@ public class TicTacToe {
 			String line4 = board[0] + board[3] + board[6];
 			String line5 = board[1] + board[4] + board[7];
 			String line6 = board[2] + board[5] + board[8];
+			//Check for all seeds in diagonal
+			String line7 = board[0] + board[4] + board[8];
+			String line8 = board[2] + board[4] + board[6];
+
 			switch(a)
 			{
 				case 0 :
@@ -262,6 +266,22 @@ public class TicTacToe {
 							System.out.println("Enter value: 8");
 						else if(line6.equals("XX9"))
 							System.out.println("Enter value: 9");
+						break;
+					}
+				case 6 :
+					{
+						if(line7.equals("1XX"))
+							System.out.println("Enter value: 1");
+						else if(line7.equals("XX9"))
+							System.out.println("Enter value: 9");
+						break;
+					}
+				case 7 :
+					{
+						if(line8.equals("3XX"))
+							System.out.println("Enter value: 3");
+						else if(line8.equals("XX7"))
+							System.out.println("Enter value: 7");
 						break;
 					}
 			}
