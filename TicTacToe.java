@@ -33,6 +33,7 @@ public class TicTacToe {
 		}
 		printBoard();
 
+		//This loop will continue till the game is over
 		while (winner == null)
 		{
 			int numInput;
