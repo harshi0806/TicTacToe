@@ -9,6 +9,7 @@ public class TicTacToe {
 	static Scanner in;
 	static String[] board;
 	static String turn;
+	static int player;
 
 	public static void main(String[] args) {
 		in = new Scanner(System.in);
@@ -183,5 +184,68 @@ public class TicTacToe {
 
 		System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in:");
 		return null;
+	}
+
+	/**
+	  *Function decides next move chose by the computer
+	  */
+	public static void nextMove() {
+		for(int a = 0; a < 9; a++)
+		{
+			board[a] = String.valueOf(a+1);
+			if(board[a] == "X" || board[a] == "O")
+				break;
+			else
+			{
+				switch(a)
+				{
+					case 0 :
+						{
+						System.out.println("Enter value: 1");
+						break;
+						}
+					case 1 :
+						{
+						System.out.println("Enter value: 2");
+						break;
+						}
+					case 2 :
+						{
+						System.out.println("Enter value: 3");
+						break;
+						}
+					case 3 :
+						{
+						System.out.println("Enter value: 4");
+						break;
+						}
+					case 4 :
+						{
+						System.out.println("Enter value: 5");
+						break;
+						}
+					case 5 :
+						{
+						System.out.println("Enter value: 6");
+						break;
+						}
+					case 6 :
+						{
+						System.out.println("Enter value: 7");
+						break;
+						}
+					case 7 :
+						{
+						System.out.println("Enter value: 8");
+						break;
+						}
+					case 8 :
+						{
+						System.out.println("Enter value: 9");
+						break;
+						}
+				}
+			}
+		}
 	}
 }
