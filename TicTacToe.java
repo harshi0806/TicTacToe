@@ -189,10 +189,10 @@ public class TicTacToe {
 
 	/**
 	  *Function decides next move chose by the computer
-	  *This checks for every seeds which include all rows
+	  *This checks for every seeds which include all rows,columns,corners,centre
 	  */
 	public static void nextMove() {
-		for(int a = 0; a < 8; a++)
+		for(int a = 0; a < 9; a++)
 		{
 			//Checks for all seeds in row
 			String line1 = board[0] + board[1] + board[2];
@@ -282,6 +282,14 @@ public class TicTacToe {
 							System.out.println("Enter value: 3");
 						else if(line8.equals("XX7"))
 							System.out.println("Enter value: 7");
+						break;
+					}
+				case 8 :
+					{
+						if(line7.equals("X5X"))
+							System.out.println("Enter value: 5");
+						else if(line8.equals("X5X"))
+							System.out.println("Enter value: 5");
 						break;
 					}
 			}
